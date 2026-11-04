@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Feed Sign Up</title>
+    <link rel = "stylesheet" href="signup.css">
+
+</head>
+
+<body>
+    <div id = "everything">
+    <div id = "header">
+        <button id = "close" type="button" id="closeBtn">X</button>
+        <h1>Daily Feed</h1>
+        <br>
+        <h2>scripture a day</h2>
+    </div>
+    <div id="formContainer">
+        <h3>Sign Up for Daily Scripture Feed</h3>
+        <form id="myForm">
+            
+            <label class = "label1" for="username">User Name:</label>
+            <input class = "input1" type="text" id="username" name="username" required>
+
+            <label class = "label1" for="password">Password:</label>
+            <input class = "input1" type="password" id="password" name="password" required>
+
+            <label class = "label1" for="email">Email:</label>
+            <input class = "input1" type="email" id="email" name="email" required>
+
+            <label class = "label1">Gender:</label>
+            <div>
+                <input class = "input2" type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <section class = "checkbox">
+                <input class = "checkbox" type="checkbox" id="newsletter" name="newsletter">
+                <label class = "checkbox" for="newsletter">Subscribe to newsletter</label>
+            </section>
+
+            <section class = "checkbox">
+                <input type="checkbox" id="conditions" name="conditions" required>
+                <label for="conditions">I acknowledge the terms and conditions</label>
+            </section>
+
+            <section id = "submit">
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+        <div id = "scripture">
+            <img src = "images/book_of_mormon.webp" alt="bom" id = "one">
+            <img src = "images/doctrine_and_covenants.webp" alt ="d&c" id = "two">
+            <img src = "images/new_testament.webp" alt = "NT" id = "three">
+            <img src = "images/old_testament.webp" alt = "OT" id ="4">
+            <img src = "images/pearl_of_great_price.webp" alt = "POGP" id = "5">
+        </div>
+    </div>
+    </div>
+    <div id="output"></div>
+    </div>
+    <script>
+        // Here is some Javascript to start looking forward to wdd131
+        document.getElementById("closeBtn").addEventListener("click", function () {
+            document.getElementById("formContainer").style.display = "none";
+         });
+        const form = document.getElementById('myForm');
+        const output = document.getElementById('output');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Stop form from actually submitting
+
+            const formData = new FormData(form);
+            const entries = [];
+
+            for (const [key, value] of formData.entries()) {
+                if (key == "password") {
+                    entries.push(`<strong>${key}</strong>: ${value} (you should probably encrypt the password)`);
+                } else {
+                    entries.push(`<strong>${key}</strong>: ${value}`);
+                }
+            }
+
+            output.innerHTML = `
+            <br>  
+            <h3>Here is the data that would be sent to the server:</h3>
+            <ul>
+                ${entries.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+            `;
+                });
+    </script>
+
+</body>
+
+</html>

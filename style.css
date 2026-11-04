@@ -116,10 +116,23 @@ background-image: linear-gradient(to bottom, #00aaff80, #0000ff80);
 #about_picture
 {grid-column: 2/3;
 grid-row: 2/7;
-
 justify-self: center;
 align-self: center;
 border: solid #006633 5px;
 border-radius: 100%;
 margin: 30px;
 margin-right: 60px;}
+
+.ICE{color:white;
+  font-family:"comic-sans", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  border: white solid 2px;
+  background:#dcbe73;
+  text-align: center;
+  grid-column: 1/6;
+  padding: 20px;}
+
+#ICE_grid{display: grid;
+gap: 20px;
+grid-template-columns: 1fr;
+padding: 30px;}
