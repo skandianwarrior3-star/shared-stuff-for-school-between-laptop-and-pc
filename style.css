@@ -97,3 +97,13 @@ background-image: linear-gradient(to bottom, #00aaff80, #0000ff80);
    justify-self: center;
    justify-content: center;
    align-self: center;}
+
+#about_title
+ {margin: 0px;
+  padding-top: 30px;
+  color: white}
+
+.about_text
+  {font-family: "comic-sans", Arial, Helvetica, sans-serif;
+   color:white;
+   padding-left: 20px;}
