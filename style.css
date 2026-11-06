@@ -158,4 +158,34 @@ margin-top: 45px;
 border-radius: 15px;}
 
 #white_water_grid{display: grid}
-#home_grid{margin: 0px;}
+
+#home_grid{display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  margin: 0px;
+  margin-top: 0;
+  justify-content: center;}
+
+#home_title{font-family:"comic-sans", Arial, Helvetica, sans-serif;
+color:white;
+text-align: center;
+grid-column:1/5;
+margin-top:10px;
+font-size: 70px;}
+
+.img_home{width: 300px;
+  border: white solid 20px;
+  grid-row: 2/3;}
+
+#about_page_picture{rotate: -2deg;
+grid-column: 1/3;
+justify-self: center;
+margin-right: 100px;}
+
+#WWR_picture{rotate: -10deg;
+  grid-column: 2/4;
+  justify-self: center;
+  margin-left: 100px;}
+
+#ICE_picture{rotate: -7deg;
+  grid-column: 2/3;
+  justify-self: center;}
