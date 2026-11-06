@@ -1,3 +1,5 @@
+/*header*/
+
 /* colors
 beach blue #00aaff
 lime green #00ff66;
@@ -5,113 +7,118 @@ forest green 006633
 button text #ffffdd
 */
 @font-face
-   {font-family: "comic-sans";
-    src: url("fonts/SansComicSansRegular-X6gd.ttf");
-    font-weight: normal;
-    font-style: normal;}
+{font-family: "comic-sans";
+src: url("fonts/SansComicSansRegular-X6gd.ttf");
+font-weight: normal;
+font-style: normal;}
 h1 
-  {font-family: "comic-sans", Arial, Helvetica, sans-serif ;
-   grid-column: 2/4;
-   grid-row: 1/2;
-   text-align: center;
-   color: #0066ff;}
+{font-family: "comic-sans", Arial, Helvetica, sans-serif ;
+grid-column: 2/4;
+grid-row: 1/2;
+text-align: center;
+color: #0066ff;}
 
 .site_header
-  {background-color: #00ff66;
-   background-image: linear-gradient(to bottom, #00ff66, #006633);
-   height: 200px;
-   margin: 0px;}
+{background-color: #00ff66;
+background-image: linear-gradient(to bottom, #00ff66, #006633);
+height: 200px;
+margin: 0px;}
 
 .main-nav
-   {display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   text-align: center;
-   justify-content: center;}
+{display: grid;
+grid-template-columns: repeat(4, 1fr);
+text-align: center;
+justify-content: center;}
 
 .main-nav > a:first-child
-  {grid-column: 1 / 2;
-   grid-row: 1 / 2;
-   justify-self: start;
-   align-self: start;
-   margin-left: 20px;
-   margin-top: 10px;
-   margin-bottom: 10px;
-}
+{grid-column: 1 / 2;
+grid-row: 1 / 2;
+justify-self: start;
+align-self: start;
+margin-left: 20px;
+margin-top: 10px;
+margin-bottom: 10px;}
 
 #logo 
-  { display: block;
-    width: 60px;
-    height: auto;
-    border: #00aaff solid 1px;
-    border-radius: 100%;
-  }
+{display: block;
+width: 60px;
+height: auto;
+border: #00aaff solid 1px;
+border-radius: 100%;}
 
 .button
-  {font-family: "comic-sans", Arial, Helvetica, sans-serif ;
-   font-size: 30px;
-   color: #ffffdd;
-   border:#00aaff solid 2px;
-   width: 80%;
-   height:80px;
-   background-color: #dcbe73;
-   background-image: linear-gradient(to bottom, #dcbe73, #aa8c41);
-   border-radius: 15px;
-   display: flex;
-   justify-self: center;
-   align-items: center;
-   justify-content: center;}
+{font-family: "comic-sans", Arial, Helvetica, sans-serif ;
+font-size: 30px;
+color: #ffffdd;
+border:#00aaff solid 2px;
+width: 80%;
+height:80px;
+background-color: #dcbe73;
+background-image: linear-gradient(to bottom, #dcbe73, #aa8c41);
+border-radius: 15px;
+display: flex;
+justify-self: center;
+align-items: center;
+justify-content: center;}
+
 #home 
-  {grid-column: 1/2;
-   text-align: center;
-   grid-row:2/3;}
+{grid-column: 1/2;
+text-align: center;
+grid-row:2/3;}
 
 #White_Water_Rafting
-  {grid-column: 2/3;
-   grid-row:2/3;}
+{grid-column: 2/3;
+grid-row:2/3;}
 
 #In-Class-Exercises
-  {grid-column: 3/4;
-   grid-row:2/3;}
+{grid-column: 3/4;
+grid-row:2/3;}
 
 #About_Me
-  {grid-column: 4/5;
-   grid-row:2/3;}
+{grid-column: 4/5;
+grid-row:2/3;}
+
+/*footer*/
 
 .site_footer
-  {display: grid;
-   grid-template-rows: 300px;
-   height: 300px;
-   width:100%;
-   background-color: #dcbe73;
-   background-image: linear-gradient(to bottom, #dcbe73, #aa8c41);}
+{display: grid;
+grid-template-rows: 300px;
+height: 300px;
+width:100%;
+background-color: #dcbe73;
+background-image: linear-gradient(to bottom, #dcbe73, #aa8c41);}
+
+.footer_stuff
+{font-family: "comic-sans", Arial, Helvetica, sans-serif;
+margin: 0px;
+justify-self: center;
+justify-content: center;
+align-self: center;}
+
+/*background for main content*/
 
 main{width: 100%;
 min-height: 500px;
 background-color: #0066ff;
-background-image: linear-gradient(to bottom, #00aaff80, #0000ff80);
-}
+background-image: linear-gradient(to bottom, #00aaff80, #0000ff80);}
 
-.footer_stuff
-  {font-family: "comic-sans", Arial, Helvetica, sans-serif;
-   margin: 0px;
-   justify-self: center;
-   justify-content: center;
-   align-self: center;}
+/*about page */
 
 #about_title
- {margin: 0px;
-  padding-top: 30px;
-  color: white;
-  grid-column: 1/3;}
+{margin: 0px;
+padding-top: 30px;
+color: white;
+grid-column: 1/3;}
 
 .about_text
-  {font-family: "comic-sans", Arial, Helvetica, sans-serif;
-   color:white;
-   padding-left: 20px;
-  grid-column: 1/2;}
+{font-family: "comic-sans", Arial, Helvetica, sans-serif;
+color:white;
+padding-left: 20px;
+grid-column: 1/2;}
 
-  #about_grid{display: grid;
-  grid-template-columns: 1fr 1fr;}
+#about_grid
+{display: grid;
+grid-template-columns: 1fr 1fr;}
 
 #about_picture
 {grid-column: 2/3;
@@ -123,25 +130,95 @@ border-radius: 100%;
 margin: 30px;
 margin-right: 60px;}
 
-.ICE{color:white;
-  font-family:"comic-sans", Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  border: white solid 2px;
-  background:#dcbe73;
-  text-align: center;
-  grid-column: 1/6;
-  padding: 20px;
-  border-radius: 15px;}
+/*ice page*/
 
-#ICE_grid{display: grid;
+.ICE
+{color:white;
+font-family:"comic-sans", Arial, Helvetica, sans-serif;
+font-size: 30px;
+border: white solid 2px;
+background:#dcbe73;
+text-align: center;
+grid-column: 1/2;
+border-radius: 15px;
+width:100%;
+justify-self: center;
+align-content: center;}
+
+#ICE_grid
+{display: grid;
 gap: 20px;
 grid-template-columns: 1fr;
-padding: 30px;}
+justify-items: center;
+padding-top: 20px;}
+
+.learned
+{color: white;
+font-family:"comic-sans", Arial, Helvetica, sans-serif;
+text-align: center;}
+
+#ICE1
+{display: grid;
+grid-template-rows: 1fr 1fr;
+grid-row: 1/2;
+width: 95%;
+border: white solid 2px;
+border-radius: 15px;
+margin: 15px;
+margin-top: 30px;}
+
+#ICE2
+{display: grid;
+grid-template-rows: 1fr 1fr;
+grid-row: 2/3;
+width: 95%;
+border: white solid 2px;
+border-radius: 15px;
+margin: 15px;}
+
+#ICE3
+{display: grid;
+grid-template-rows: 1fr 1fr;
+grid-row: 3/4;
+width: 95%;
+border: white solid 2px;
+border-radius: 15px;
+margin: 15px;}
+
+#ICE4
+{display: grid;
+grid-template-rows: 1fr 1fr;
+grid-row: 4/5;
+width: 95%;
+border: white solid 2px;
+border-radius: 15px;
+margin: 15px;}
+
+#ICE5
+{display: grid;
+grid-template-rows: 1fr 1fr;
+grid-row: 5/6;
+width: 95%;
+border: white solid 2px;
+border-radius: 15px;
+margin: 15px;}
+
+#ICE6
+{display: grid;
+grid-template-rows: 1fr 1fr;
+grid-row: 6/7;
+width: 95%;
+border: white solid 2px;
+border-radius: 15px;
+margin: 15px;
+margin-bottom: 60px;}
+
+/*White Water Rafting*/
 
 #rafting_button{text-align: center;
-    display: block;
-    margin: 20px;
-    color: white;}
+display: block;
+margin: 20px;
+color: white;}
 
 #white_button{
 display: flex;
@@ -160,10 +237,10 @@ border-radius: 15px;}
 #white_water_grid{display: grid}
 
 #home_grid{display: grid;
-  grid-template-columns: 2fr 3fr 2fr;
-  margin: 0px;
-  margin-top: 0;
-  justify-content: center;}
+grid-template-columns: 2fr 3fr 2fr;
+margin: 0px;
+margin-top: 0;
+justify-content: center;}
 
 #home_title{font-family:"comic-sans", Arial, Helvetica, sans-serif;
 color:white;
@@ -173,8 +250,8 @@ margin-top:10px;
 font-size: 70px;}
 
 .img_home{width: 300px;
-  border: white solid 20px;
-  grid-row: 2/3;}
+border: white solid 20px;
+grid-row: 2/3;}
 
 #about_page_picture{rotate: -2deg;
 grid-column: 1/3;
@@ -182,10 +259,12 @@ justify-self: center;
 margin-right: 100px;}
 
 #WWR_picture{rotate: -10deg;
-  grid-column: 2/4;
-  justify-self: center;
-  margin-left: 100px;}
+grid-column: 2/4;
+justify-self: center;
+margin-left: 100px;}
 
 #ICE_picture{rotate: -7deg;
-  grid-column: 2/3;
-  justify-self: center;}
+grid-column: 2/3;
+justify-self: center;}
+
+/*Ice page*/
