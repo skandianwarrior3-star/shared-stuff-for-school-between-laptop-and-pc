@@ -89,7 +89,7 @@ main{width: 100%;
 min-height: 500px;
 background-color: #0066ff;
 background-image: linear-gradient(to bottom, #00aaff80, #0000ff80);
-;}
+}
 
 .footer_stuff
   {font-family: "comic-sans", Arial, Helvetica, sans-serif;
@@ -130,9 +130,32 @@ margin-right: 60px;}
   background:#dcbe73;
   text-align: center;
   grid-column: 1/6;
-  padding: 20px;}
+  padding: 20px;
+  border-radius: 15px;}
 
 #ICE_grid{display: grid;
 gap: 20px;
 grid-template-columns: 1fr;
 padding: 30px;}
+
+#rafting_button{text-align: center;
+    display: block;
+    margin: 20px;
+    color: white;}
+
+#white_button{
+display: flex;
+text-align: center;
+justify-self: center;
+align-items: center;
+justify-content: center;
+width:80%;
+background: #dcbe73;
+font-family:"comic-sans", Arial, Helvetica, sans-serif;
+border: white solid 2px;
+font-size: 45px;
+margin-top: 45px;
+border-radius: 15px;}
+
+#white_water_grid{display: grid}
+#home_grid{margin: 0px;}
